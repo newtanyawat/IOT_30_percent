@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP Web Server</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/sw_tg.css" />
+
+    <!-- Script -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>Smart Home Platform</h1>
+    </div>
+    <div class="content">
+      <div class="card">
+        <h2> ----------- XXXXXX ----------- </h2>
+        <ul class="SWlist">
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="togBtn_1" onchange="updateStatusSW(this)" />
+              <div class="slider round">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+              </div>
+            </label>
+            1
+          </li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="togBtn_2" onchange="updateStatusSW(this)" />
+              <div class="slider round">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+              </div>
+            </label>
+            2
+          </li>
+        </ul>        
+        <ul class="SWlist">
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="togBtn_3" onchange="updateStatusSW(this)" />
+              <div class="slider round">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+              </div>
+            </label>
+            3
+          </li>
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="togBtn_4" onchange="updateStatusSW(this)" />
+              <div class="slider round">
+                <span class="off">OFF</span>
+                <span class="on">ON</span>
+              </div>
+            </label>
+            4
+          </li>
+        </ul>
+      </div>
+
+  </body>
+</html>
