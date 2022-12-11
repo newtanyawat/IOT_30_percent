@@ -1,3 +1,6 @@
+let temp_level = "30"
+let humu_level = "50"
+
 var gateway = `ws://${httpGet("http://esp8266.local")}/ws`;
 // var gateway = "ws://192.168.10.107/ws"
 console.log("gateway ----> " + gateway );
@@ -65,6 +68,13 @@ function onMessage(event) {
             console.log("in this DHT case");
             $("#DHT_Humidity").text(myObj["DHT_Humidity"]);
             $("#DHT_Temperature").text(myObj["DHT_Temperature"]);
+
+            if (myObj["DHT_Temperature"] == temp_level){
+              $(`#togBtn_3.toString()}`).prop('checked', true);
+            }
+            if (myObj["DHT_Temperature"] == humu_level){
+              $(`#togBtn_4.toString()}`).prop('checked', true);
+            }
         }
     }
 }
